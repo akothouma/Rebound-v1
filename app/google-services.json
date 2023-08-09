@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "21306650504",
+    "project_id": "rebound-bbc70",
+    "storage_bucket": "rebound-bbc70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21306650504:android:e54e6e5ddd00eebdda943d",
+        "android_client_info": {
+          "package_name": "com.Rebound.Rebound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21306650504-b1kkjnl6nrafbr9lsk02bae675v35flb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHcgxR-4sN3TrAGXRWcUsRqktv5SMYNhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21306650504-b1kkjnl6nrafbr9lsk02bae675v35flb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21306650504:android:1ef610609c08afc9da943d",
+        "android_client_info": {
+          "package_name": "com.example.rebound_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21306650504-b1kkjnl6nrafbr9lsk02bae675v35flb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHcgxR-4sN3TrAGXRWcUsRqktv5SMYNhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21306650504-b1kkjnl6nrafbr9lsk02bae675v35flb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

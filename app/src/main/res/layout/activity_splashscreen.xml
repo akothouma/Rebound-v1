@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splashscreen">
+
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="REBOUND"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/getUsergroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="Are you a driver?" />
+
+    <RadioGroup
+        android:id="@+id/UserGroupRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getUsergroup"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal">
+    <RadioButton
+            android:id="@+id/YesforDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginLeft="50dp"
+            android:checked="false"
+             android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/NoforDriver"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Yes"
+            android:checked="false"
+            android:textSize="18dp"/>
+    </RadioGroup>
+
+
+</RelativeLayout>
