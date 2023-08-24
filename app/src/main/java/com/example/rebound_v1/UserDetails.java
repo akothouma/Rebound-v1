@@ -1,12 +1,12 @@
 package com.example.rebound_v1;
 
-public class UsersRegistration {
+public class UserDetails {
     private String fullName;
     private int idNumber;
     private int contactNumber;
     private String password;
 
-    public UsersRegistration(String fullName, int idNumber, int contactNumber, String password) {
+    public UserDetails(String fullName, int idNumber, int contactNumber, String password) {
         this.fullName = fullName;
         this.idNumber = idNumber;
         this.contactNumber = contactNumber;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/addlisting"
+            android:title="@string/addlisting"
+            android:contentDescription="@string/content_description_add_listing"
+            android:icon="@drawable/baseline_post_add_24"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/previouslistings"
+            android:icon="@drawable/baseline_history_24"
+            android:title="@string/previous_listings"
+            android:contentDescription="@string/content_description_previouslistings"
+            app:showAsAction="ifRoom" />
+
+
+        <item
+            android:id="@+id/helpcenter"
+            android:title="@string/support"
+            android:contentDescription="@string/content_description_email_support"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/Logout"
+            android:title="@string/logout"
+            android:contentDescription="@string/content_description_logout"
+            app:showAsAction="never" />
+
+</menu>

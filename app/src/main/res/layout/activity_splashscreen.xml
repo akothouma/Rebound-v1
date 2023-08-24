@@ -4,51 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splashscreen">
+    tools:context=".Splashscreen"
+    android:backgroundTint="@color/dark_blue_4">
 
+    <TextView
+        android:id="@+id/askUserGroupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/registering_as_a_driver"
+        android:textSize="16sp"
+        android:visibility="gone"
+         />
+
+    <RadioGroup
+        android:id="@+id/askUserGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/askUserGroupTextView"
+       android:visibility="gone"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/DriverYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:checked="false"
+            android:layout_marginEnd="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/DriverNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:checked="false"/>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="REBOUND"
-        android:textSize="40dp" />
+        android:text="@string/rebound"
+        android:textSize="30sp"
+        android:textColor="@color/dark_blue_2"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signin"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/signup"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/dark_blue_1"
+        android:text="@string/sign_in"
+        android:textColor="@color/dark_blue_4"
+        android:textSize="18sp"
+        app:elevation="10dp"
+        app:strokeColor="@color/dark_blue_4"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/appname"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/dark_blue_1"
+        android:text="@string/sign_up"
+        android:textColor="@color/dark_blue_4"
+        android:textSize="18sp"
+        app:elevation="10dp"
+        app:strokeColor="@color/dark_blue_4"
+        app:strokeWidth="3dp" />
+
 
     <TextView
-        android:id="@+id/getUsergroup"
+        android:id="@+id/forgoPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/appname"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="16dp"
-        android:text="Are you a driver?" />
-
-    <RadioGroup
-        android:id="@+id/UserGroupRadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/getUsergroup"
-        android:layout_marginTop="21dp"
-        android:orientation="horizontal">
-    <RadioButton
-            android:id="@+id/YesforDriver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:layout_marginLeft="50dp"
-            android:checked="false"
-             android:textSize="18dp"/>
-
-        <RadioButton
-            android:id="@+id/NoforDriver"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="Yes"
-            android:checked="false"
-            android:textSize="18dp"/>
-    </RadioGroup>
-
+        android:layout_below="@id/signin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/forgot_password_click_here_to_reset"
+        android:textColor="@color/dark_blue_1" />
 
 </RelativeLayout>

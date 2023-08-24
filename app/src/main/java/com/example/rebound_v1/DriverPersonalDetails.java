@@ -1,18 +1,31 @@
 package com.example.rebound_v1;
 
-public class Driver extends UsersRegistration {
+import java.util.ArrayList;
+
+public class DriverPersonalDetails extends UserDetails {
 
     private String driversLicence;
     private String vehicleType;
     private String vehicleNumberPlate;
     private static boolean isDriver;
+    private ArrayList<UserUploads> driversUploads;
 
-    public Driver(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate) {
+    public DriverPersonalDetails(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate) {
         super(fullName, idNumber, contactNumber, password);
         this.driversLicence = driversLicence;
         this.vehicleType = vehicleType;
         this.vehicleNumberPlate = vehicleNumberPlate;
+        this.driversUploads=new ArrayList<>();
 
+
+    }
+
+    public DriverPersonalDetails(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate, ArrayList<UserUploads> driversUploads) {
+        super(fullName, idNumber, contactNumber, password);
+        this.driversLicence = driversLicence;
+        this.vehicleType = vehicleType;
+        this.vehicleNumberPlate = vehicleNumberPlate;
+        this.driversUploads = driversUploads;
     }
 
     public String getDriversLicence() {
@@ -39,11 +52,19 @@ public class Driver extends UsersRegistration {
         this.vehicleNumberPlate = vehicleNumberPlate;
     }
 
+    public ArrayList<UserUploads> getDriversUploads() {
+        return driversUploads;
+    }
+
+    public void setDriversUploads(ArrayList<UserUploads> driversUploads) {
+        this.driversUploads = driversUploads;
+    }
+
     public static boolean isIsDriver() {
         return isDriver;
     }
 
     public static void setIsDriver(boolean isDriver) {
-        Driver.isDriver = isDriver;
+        DriverPersonalDetails.isDriver = isDriver;
     }
 }

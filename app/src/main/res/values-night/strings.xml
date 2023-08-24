@@ -1,24 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rebound-v1</string>
     <string name="forgot_password_click_here_to_reset">Forgot password?Click here to reset.</string>
     <string name="sign_in">SIGN IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="rebound">REBOUND</string>
-    <string name="registering_as_a_driver">Registering as a driver?</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="your_profile_picture" />
     <string name="to">To</string>
-    <string name="page_title">Potential business</string>
-    <string name="page_title1">Current listings</string>
-    <string name="page_title2">Add listings</string>
+    <string name="page_title" />
     <string name="potentialclient" />
     <string name="content_description_potentialclient" />
     <string name="mylistings" />
     <string name="content_description_mylistings" />
-    <string name="moremenuoptions" />
     <string name="content_description_moremenuoptions" />
     <string name="myprofile" />
     <string name="content_description_myprofile" />
@@ -27,11 +21,12 @@
     <string name="logout" />
     <string name="content_description_logout" />
     <string name="myleads" />
-    <string name="addlisting"> Add listing</string>
+    <string name="addlisting" />
     <string name="content_description_add_listing" />
     <string name="previous_listings" />
     <string name="content_description_previouslistings" />
     <string name="search" />
     <string name="content_description_search" />
-
+    <string name="potential_business" />
+    <string name="currentlistings" />
 </resources>
