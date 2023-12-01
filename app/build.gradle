@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
 }
-
 android {
     namespace 'com.example.rebound_v1'
     compileSdk 33
@@ -27,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
@@ -43,4 +43,10 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
     def fragment_version = "1.6.1"
     implementation "androidx.fragment:fragment:$fragment_version"
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'com.google.firebase:firebase-storage:20.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+}
+configurations.implementation {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }

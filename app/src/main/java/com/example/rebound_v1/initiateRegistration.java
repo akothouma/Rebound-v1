@@ -25,7 +25,7 @@ public class initiateRegistration extends AppCompatActivity {
                     Intent movetoConsumersRegistationActivity=new Intent(initiateRegistration.this,DriversSignUp.class);
                     startActivity(movetoConsumersRegistationActivity);
                 }else{
-                    Intent movetoDriversRegitrationActivity=new Intent(initiateRegistration.this,CustomerSignUp.class);
+                    Intent movetoDriversRegitrationActivity=new Intent(initiateRegistration.this, ConsumerSignUp.class);
                     startActivity(movetoDriversRegitrationActivity);
                 }
 

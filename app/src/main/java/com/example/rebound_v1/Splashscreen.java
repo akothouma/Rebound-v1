@@ -45,10 +45,10 @@ public class Splashscreen extends AppCompatActivity {
                 RadioButton radioButton = findViewById(checkedId);
 
                 if (checkedId == (R.id.DriverYes)) {
-                    intent = new Intent(Splashscreen.this, DriversSignUp.class);
+                    intent = new Intent(Splashscreen.this,DriversSignUp.class);
                     startActivity(intent);
                 } else {
-                    intent = new Intent(Splashscreen.this, CustomerSignUp.class);
+                    intent = new Intent(Splashscreen.this, ConsumerSignUp.class);
                     startActivity(intent);
                 }
 

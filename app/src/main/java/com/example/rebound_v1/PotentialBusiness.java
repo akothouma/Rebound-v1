@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.transition.MaterialFadeThrough;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link PotentialBusiness#newInstance} factory method to
@@ -49,10 +51,12 @@ public class PotentialBusiness extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+        MaterialFadeThrough exitTransition= new MaterialFadeThrough();
+//        }
     }
 
     @Override

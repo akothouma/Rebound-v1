@@ -3,29 +3,46 @@ package com.example.rebound_v1;
 public class UserUploads {
     private String From;
     private String To;
-    private int  chosenDay,chosenMonth,chosenYear;
-    private int chosenHour,chosenMinute;
+    private int firstChosenDay, firstChosenMonth, firstChosenYear;
+    private int lastChosenDay, lastChosenMont, lastChosenYear;
+    private int firstChosenHour, FirstChosenMinute;
+    private int lastChosenHour, LastChosenMinute;
     private String TypeOfLuggage;
 
+// constructor for driver uploads
 
-    public UserUploads(String from, String to, int chosenDay, int chosenMonth, int chosenYear, int chosenHour, int chosenMinute) {
+
+    public UserUploads(String from, String to, int firstChosenDay, int firstChosenMonth, int firstChosenYear, int lastChosenDay, int lastChosenMont, int lastChosenYear, int firstChosenHour, int firstChosenMinute, int lastChosenHour, int lastChosenMinute) {
         From = from;
         To = to;
-        this.chosenDay = chosenDay;
-        this.chosenMonth = chosenMonth;
-        this.chosenYear = chosenYear;
-        this.chosenHour = chosenHour;
-        this.chosenMinute = chosenMinute;
+        this.firstChosenDay = firstChosenDay;
+        this.firstChosenMonth = firstChosenMonth;
+        this.firstChosenYear = firstChosenYear;
+        this.lastChosenDay = lastChosenDay;
+        this.lastChosenMont = lastChosenMont;
+        this.lastChosenYear = lastChosenYear;
+        this.firstChosenHour = firstChosenHour;
+        FirstChosenMinute = firstChosenMinute;
+        this.lastChosenHour = lastChosenHour;
+        LastChosenMinute = lastChosenMinute;
     }
 
-    public UserUploads(String from, String to, int chosenDay, int chosenMonth, int chosenYear, int chosenHour, int chosenMinute, String typeOfLuggage) {
+    // constructor for consumer uploads
+
+
+    public UserUploads(String from, String to, int firstChosenDay, int firstChosenMonth, int firstChosenYear, int lastChosenDay, int lastChosenMont, int lastChosenYear, int firstChosenHour, int firstChosenMinute, int lastChosenHour, int lastChosenMinute, String typeOfLuggage) {
         From = from;
         To = to;
-        this.chosenDay = chosenDay;
-        this.chosenMonth = chosenMonth;
-        this.chosenYear = chosenYear;
-        this.chosenHour = chosenHour;
-        this.chosenMinute = chosenMinute;
+        this.firstChosenDay = firstChosenDay;
+        this.firstChosenMonth = firstChosenMonth;
+        this.firstChosenYear = firstChosenYear;
+        this.lastChosenDay = lastChosenDay;
+        this.lastChosenMont = lastChosenMont;
+        this.lastChosenYear = lastChosenYear;
+        this.firstChosenHour = firstChosenHour;
+        FirstChosenMinute = firstChosenMinute;
+        this.lastChosenHour = lastChosenHour;
+        LastChosenMinute = lastChosenMinute;
         TypeOfLuggage = typeOfLuggage;
     }
 
@@ -45,44 +62,84 @@ public class UserUploads {
         To = to;
     }
 
-    public int getChosenDay() {
-        return chosenDay;
+    public int getFirstChosenDay() {
+        return firstChosenDay;
     }
 
-    public void setChosenDay(int chosenDay) {
-        this.chosenDay = chosenDay;
+    public void setFirstChosenDay(int firstChosenDay) {
+        this.firstChosenDay = firstChosenDay;
     }
 
-    public int getChosenMonth() {
-        return chosenMonth;
+    public int getFirstChosenMonth() {
+        return firstChosenMonth;
     }
 
-    public void setChosenMonth(int chosenMonth) {
-        this.chosenMonth = chosenMonth;
+    public void setFirstChosenMonth(int firstChosenMonth) {
+        this.firstChosenMonth = firstChosenMonth;
     }
 
-    public int getChosenYear() {
-        return chosenYear;
+    public int getFirstChosenYear() {
+        return firstChosenYear;
     }
 
-    public void setChosenYear(int chosenYear) {
-        this.chosenYear = chosenYear;
+    public void setFirstChosenYear(int firstChosenYear) {
+        this.firstChosenYear = firstChosenYear;
     }
 
-    public int getChosenHour() {
-        return chosenHour;
+    public int getLastChosenDay() {
+        return lastChosenDay;
     }
 
-    public void setChosenHour(int chosenHour) {
-        this.chosenHour = chosenHour;
+    public void setLastChosenDay(int lastChosenDay) {
+        this.lastChosenDay = lastChosenDay;
     }
 
-    public int getChosenMinute() {
-        return chosenMinute;
+    public int getLastChosenMont() {
+        return lastChosenMont;
     }
 
-    public void setChosenMinute(int chosenMinute) {
-        this.chosenMinute = chosenMinute;
+    public void setLastChosenMont(int lastChosenMont) {
+        this.lastChosenMont = lastChosenMont;
+    }
+
+    public int getLastChosenYear() {
+        return lastChosenYear;
+    }
+
+    public void setLastChosenYear(int lastChosenYear) {
+        this.lastChosenYear = lastChosenYear;
+    }
+
+    public int getFirstChosenHour() {
+        return firstChosenHour;
+    }
+
+    public void setFirstChosenHour(int firstChosenHour) {
+        this.firstChosenHour = firstChosenHour;
+    }
+
+    public int getFirstChosenMinute() {
+        return FirstChosenMinute;
+    }
+
+    public void setFirstChosenMinute(int firstChosenMinute) {
+        FirstChosenMinute = firstChosenMinute;
+    }
+
+    public int getLastChosenHour() {
+        return lastChosenHour;
+    }
+
+    public void setLastChosenHour(int lastChosenHour) {
+        this.lastChosenHour = lastChosenHour;
+    }
+
+    public int getLastChosenMinute() {
+        return LastChosenMinute;
+    }
+
+    public void setLastChosenMinute(int lastChosenMinute) {
+        LastChosenMinute = lastChosenMinute;
     }
 
     public String getTypeOfLuggage() {
@@ -93,3 +150,4 @@ public class UserUploads {
         TypeOfLuggage = typeOfLuggage;
     }
 }
+

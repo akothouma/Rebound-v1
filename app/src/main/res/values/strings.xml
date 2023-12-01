@@ -20,11 +20,11 @@
     <string name="content_description_mylistings" />
     <string name="moremenuoptions" />
     <string name="content_description_moremenuoptions" />
-    <string name="myprofile" />
+    <string name="myprofile">Profile</string>
     <string name="content_description_myprofile" />
     <string name="content_description_email_support" />
-    <string name="support" />
-    <string name="logout" />
+    <string name="support">Email suppport </string>
+    <string name="logout"> Log out</string>
     <string name="content_description_logout" />
     <string name="myleads" />
     <string name="addlisting"> Add listing</string>

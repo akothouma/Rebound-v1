@@ -2,25 +2,27 @@ package com.example.rebound_v1;
 
 import java.util.ArrayList;
 
-public class DriverPersonalDetails extends UserDetails {
-
+public class DriverProfileBuilderModel extends UserPersonalDetails {
     private String driversLicence;
     private String vehicleType;
     private String vehicleNumberPlate;
-    private static boolean isDriver;
+    private static boolean isDriver=true;
     private ArrayList<UserUploads> driversUploads;
 
-    public DriverPersonalDetails(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate) {
+    public DriverProfileBuilderModel(String fullName, int idNumber, int contactNumber, String password) {
+        super(fullName, idNumber, contactNumber, password);
+
+    }
+
+    public DriverProfileBuilderModel(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate) {
         super(fullName, idNumber, contactNumber, password);
         this.driversLicence = driversLicence;
         this.vehicleType = vehicleType;
         this.vehicleNumberPlate = vehicleNumberPlate;
         this.driversUploads=new ArrayList<>();
-
-
     }
 
-    public DriverPersonalDetails(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate, ArrayList<UserUploads> driversUploads) {
+    public DriverProfileBuilderModel(String fullName, int idNumber, int contactNumber, String password, String driversLicence, String vehicleType, String vehicleNumberPlate, ArrayList<UserUploads> driversUploads) {
         super(fullName, idNumber, contactNumber, password);
         this.driversLicence = driversLicence;
         this.vehicleType = vehicleType;
@@ -52,19 +54,19 @@ public class DriverPersonalDetails extends UserDetails {
         this.vehicleNumberPlate = vehicleNumberPlate;
     }
 
+    public static boolean isIsDriver() {
+        return isDriver;
+    }
+
+    public static void setIsDriver(boolean isDriver) {
+        DriverProfileBuilderModel.isDriver = isDriver;
+    }
+
     public ArrayList<UserUploads> getDriversUploads() {
         return driversUploads;
     }
 
     public void setDriversUploads(ArrayList<UserUploads> driversUploads) {
         this.driversUploads = driversUploads;
-    }
-
-    public static boolean isIsDriver() {
-        return isDriver;
-    }
-
-    public static void setIsDriver(boolean isDriver) {
-        DriverPersonalDetails.isDriver = isDriver;
     }
 }
